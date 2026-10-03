@@ -1,0 +1,16 @@
+{
+  "wb": [
+    {
+      "ip": "Брайт Кейс",
+      "slug": "wb-brayt-keys",
+      "default": true
+    }
+  ],
+  "ozon": [
+    {
+      "ip": "Брайт Кейс",
+      "slug": "ozon-brayt-keys",
+      "default": true
+    }
+  ]
+}
