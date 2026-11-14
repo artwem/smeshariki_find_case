@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Каталог моделей — CASE.PLACE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark"><span class="brand-heart">♥</span></span>
+    <span class="brand-name">CASE<span class="brand-dot">.</span>PLACE</span>
+  </div>
+  <nav class="meta-nav">
+    <span id="model-count" class="counter">—</span>
+    <span class="divider">/</span>
+    <span class="label">моделей в каталоге</span>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="search-section">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m21 21-4.35-4.35" stroke-linecap="round" />
+      </svg>
+      <input
+        type="text"
+        id="search"
+        placeholder="iPhone 15, Galaxy S24, Redmi Note…"
+        autocomplete="off"
+      />
+      <button id="clear-search" class="clear-btn" aria-label="Очистить">×</button>
+    </div>
+  </section>
+
+  <div class="filter-wrap">
+    <button class="filter-arrow filter-arrow--left" id="filter-arrow-left" aria-label="Прокрутить влево">&#8249;</button>
+    <section class="material-filter" id="material-filter"></section>
+    <button class="filter-arrow filter-arrow--right" id="filter-arrow-right" aria-label="Прокрутить вправо">&#8250;</button>
+  </div>
+
+  <section class="models" id="models-list">
+    <div class="loading">Загрузка каталога…</div>
+  </section>
+
+  <section class="empty-state" id="empty-state" hidden>
+    <div class="empty-mark">∅</div>
+    <p>Ничего не нашлось по этому запросу.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© CASE.PLACE 2026</span>
+    <span class="footer-meta" id="data-meta">данные: локальный CSV</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="rank.js"></script>
+<script src="data.js"></script>
+<script src="shops.js"></script>
+</body>
+</html>
