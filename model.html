@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Модель — CASE.PLACE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html" class="back-link">
+      <span class="back-arrow">←</span>
+      <span>каталог</span>
+    </a>
+  </div>
+  <nav class="meta-nav">
+    <span id="prints-count" class="counter">—</span>
+    <span class="divider">/</span>
+    <span class="label">принтов</span>
+  </nav>
+</header>
+
+<main class="container container--model">
+
+  <section class="model-hero">
+    <div class="model-category" id="model-category" hidden></div>
+    <div class="eyebrow" id="model-eyebrow">модель</div>
+    <h1 class="display display--model" id="model-title">—</h1>
+  </section>
+
+  <section class="prints-grid" id="prints-grid">
+    <div class="loading">Загрузка принтов…</div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© CASE.PLACE 2026</span>
+    <span class="footer-meta" id="data-meta">данные: локальный CSV</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="rank.js"></script>
+<script src="data.js"></script>
+<script src="shops.js"></script>
+<script src="model.js"></script>
+</body>
+</html>
